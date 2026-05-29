@@ -1,0 +1,327 @@
+%# -*- coding:utf-8 -*-
+% 绍兴市第一中学 Beamer 模板
+% 基于浙江大学 Beamer 模板修改
+
+\PassOptionsToPackage{quiet}{fontspec}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,aspectratio=169]{beamer}
+
+% ============================================================
+% 内嵌样式定义
+% ============================================================
+\makeatletter
+
+% --- 字体与中文支持 ---
+\usefonttheme[onlymath]{serif}
+\RequirePackage{fontspec}
+\RequirePackage{xeCJK}
+\RequirePackage{ctex}
+
+% --- 数学与符号 ---
+\RequirePackage{amsmath,amsfonts,amssymb,bm}
+
+% --- 图形与超链接 ---
+\RequirePackage{graphicx}
+\RequirePackage{hyperref,url}
+
+% --- 其他常用宏包 ---
+\RequirePackage{metalogo}
+\RequirePackage{lipsum}
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\RequirePackage{subcaption}
+\RequirePackage{multicol}
+\RequirePackage{caption}
+\RequirePackage{fancyhdr}
+\RequirePackage{tcolorbox}
+\RequirePackage{mwe} % 提供示例图片，实际使用时可删除并放入真实校徽
+
+% --- 中文标点句号替换 ---
+\catcode`\。=\active
+\newcommand{。}{．}
+
+% --- 继承现有主题 ---
+\useoutertheme{split}
+\usecolortheme{whale}
+\useinnertheme{rounded}
+\usecolortheme{orchid}
+
+% --- 列表样式 ---
+\beamertemplateballitem
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[circle]
+\setbeamertemplate{sections/subsections in toc}[default]
+\setbeamertemplate{blocks}[rounded]
+\setbeamertemplate{section in toc}[square]
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true]
+
+% --- 背景设置（可替换为绍兴一中官方背景） ---
+\pgfdeclareimage[width=\paperwidth,height=\paperheight]{bg}{figures/background.png}
+\setbeamertemplate{background}{\pgfuseimage{bg}}
+
+% --- 结构色（可改为绍兴一中校色） ---
+% \usecolortheme[RGB={0,63,136}]{structure} % 浙大蓝，按需修改
+\usecolortheme[RGB={164,43,36}]{structure} % 博雅红
+% \usecolortheme[RGB={231,220,192}]{structure} % 求真黄
+
+% --- 顶部颜色与渐变 ---
+\setbeamercolor{frametitle}{parent=subsection in head/foot}
+\setbeamercolor{frametitle right}{parent=section in head/foot}
+\pgfdeclarehorizontalshading[frametitle.bg,frametitle right.bg]{beamer@frametitleshade}{\paperheight}{%
+  color(0pt)=(frametitle.bg);
+  color(\paperwidth)=(frametitle right.bg)}
+
+\AtBeginDocument{
+  \pgfdeclareverticalshading{beamer@topshade}{\paperwidth}{%
+    color(0pt)=(bg);
+    color(4pt)=(black!50!bg)}
+}
+
+% --- 页脚 footline ---
+\defbeamertemplate*{footline}{shaoxing theme}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.35\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortdate
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.34\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=0.06\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+      \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+% --- headline 颜色切换命令 ---
+\newcommand{\shaoxingsectioncolor}[1]{%
+  \def\sx@headlinecolor{section in head/foot}%
+  \edef\sx@tmpa{#1}%
+  \ifx\sx@tmpa\@empty\else
+    \ifx\sx@tmpa\sx@blue
+      \def\sx@headlinecolor{subsection in head/foot}%
+    \fi
+  \fi
+}
+\def\sx@blue{blue}
+\shaoxingsectioncolor{blue} % 默认蓝色
+
+% --- 页眉 headline ---
+\defbeamertemplate*{headline}{shaoxing theme}{%
+  \leavevmode%
+  \@tempdimb=6.4375ex%
+  \pgfdeclareimage[height=.85\@tempdimb]{logo}{figures/logo.png}% 校徽，请替换为 figures/logo.png
+  \pgfdeclareimage[height=0.8\@tempdimb]{title_logo}{figures/char.png}% 标题图标，请替换为 figures/char.png
+  \logo{\pgfuseimage{logo}}%
+  \ifdim\@tempdimb>0pt%
+    \advance\@tempdimb by 1.125ex%
+    \begin{beamercolorbox}[wd=.8\paperwidth,ht=\@tempdimb]{section in head/foot}%
+      \vbox to\@tempdimb{\vfil\insertsectionnavigationhorizontal{.5\textwidth}{\hskip0pt plus1filll}{}\vfil}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.135\paperwidth,ht=\@tempdimb,center]{\sx@headlinecolor}%
+      \vbox to\@tempdimb{\vfil\pgfuseimage{title_logo}\vfil}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.065\paperwidth,ht=\@tempdimb,center]{\sx@headlinecolor}%
+      \vbox to\@tempdimb{\vfil\insertlogo\vfil\vfil}%
+    \end{beamercolorbox}%
+  \fi%
+}
+
+% --- frametitle 样式 ---
+\defbeamertemplate*{frametitle}{shaoxing theme}{%
+  \nointerlineskip%
+  \hbox{\leavevmode
+    \advance\beamer@leftmargin by -12bp%
+    \advance\beamer@rightmargin by -12bp%
+    \beamer@tempdim=\textwidth%
+    \advance\beamer@tempdim by \beamer@leftmargin%
+    \advance\beamer@tempdim by \beamer@rightmargin%
+    \hskip-\Gm@lmargin\hbox{%
+      \setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
+          \vbox{}\vskip-.75ex%
+          \leftskip0.3cm%
+          \rightskip0.3cm plus1fil\leavevmode
+          \insertframetitle%
+          \ifx\insertframesubtitle\@empty%
+            \strut\par%
+          \else
+            \par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\strut\par}%
+          \fi%
+          \nointerlineskip
+          \vbox{}%
+        \end{minipage}}%
+      \beamer@tempdim=\ht\beamer@tempbox%
+      \advance\beamer@tempdim by 2pt%
+      \begin{pgfpicture}{0mm}{0pt}{1.01\paperwidth}{\beamer@tempdim}
+        \usebeamercolor{frametitle right}
+        \pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{\beamer@tempdim}}
+        \pgfusepath{clip}
+        \pgftext[left,base]{\pgfuseshading{beamer@frametitleshade}}
+      \end{pgfpicture}
+      \hskip-\paperwidth%
+      \box\beamer@tempbox%
+    }%
+    \hskip-\Gm@rmargin%
+  }%
+}
+
+% --- 代码高亮设置 ---
+\lstset{
+    language=Tex,
+    backgroundcolor=\color{white},
+    basicstyle=\ttfamily,
+    breaklines=true,
+    keywordstyle=\bfseries\color{NavyBlue},
+    emph={self},
+    emphstyle=\bfseries\color{Rhodamine},
+    commentstyle=\itshape\color{black!50!white},
+    stringstyle=\bfseries\color{PineGreen!90!black},
+    columns=flexible,
+    numbers=left,
+    numbersep=2em,
+    numberstyle=\footnotesize,
+    frame=shadowbox,
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    showstringspaces=false
+}
+
+\lstloadlanguages{C,C++,Java,Matlab,python,Mathematica}
+
+% --- 参考文献样式 ---
+\setbeamertemplate{bibliography item}[text]
+\newcommand{\reference}{
+    \nocite{*}
+    \bibliographystyle{unsrt}
+    \begin{center}
+    	\bibliography{references}
+    \end{center}
+}
+
+\makeatother
+% ============================================================
+% 样式定义结束
+% ============================================================
+
+% 图片路径
+\graphicspath{{./figures/}}
+
+% 首页信息设置（请根据实际情况修改）
+\title[绍兴一中 Beamer 模板]{绍兴市第一中学 Beamer 模板}
+\subtitle{——这里是副标题}
+\author[Your Name]{你的姓名}
+\institute[绍兴一中]{绍兴市第一中学}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{目录}
+	\tableofcontents
+\end{frame}
+
+\section{介绍}
+\begin{frame}
+	\frametitle{介绍}
+	\begin{itemize}
+		\item {编译方式}
+		      \begin{itemize}
+			      \item 推荐安装完整版的 TeXLive
+			      \item 使用 \XeLaTeX 编译
+		      \end{itemize}
+		\item 请参考 \LaTeX 和 Beamer 用户文档
+		\item 行内数学公式示例 $\sin^2 \theta + \cos^2 \theta = 1$
+		\item {行间数学公式示例 \begin{equation}
+			      y_{1}=\int \sin x\, {\rm d}x
+		      \end{equation}}
+		\item 基于“绍兴一中”主题色
+	\end{itemize}
+\end{frame}
+
+\section{内置环境}
+\begin{frame}{内置环境}{副标题}
+	\begin{block}{Slides with \LaTeX}
+		Beamer offers a lot of functions to create nice slides using \LaTeX.
+	\end{block}
+	\begin{block}{The basis}
+		内部使用以下主题
+		\begin{itemize}
+			\item split
+			\item whale
+			\item rounded
+			\item orchid
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{带数字列表}
+	\begin{enumerate}
+		\item 显示列表样式
+		\item 这并非 Beamer 教程
+		\item 详细用法请阅读 Beamer 手册
+		\item 有关样式问题请联系模板维护者
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{并排图片显示}
+	可以通过 minipage 方式实现并排效果：
+	\begin{figure}[ht]
+		\centering
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=0.5\linewidth]{figures/example1.png}
+			\caption{第一张图片}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[b]{0.45\linewidth}
+			\centering
+			\includegraphics[width=0.5\linewidth]{figures/example2.png}
+			\caption{第二张图片}
+		\end{minipage}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{示例代码}
+\begin{lstlisting}[language=C++]
+#include <iostream>
+
+class HelloWorld {
+public:
+    void sayHello() {
+        std::cout << "Hello, Shaoxing No.1 High School!" << std::endl;
+    }
+};
+
+int main() {
+    HelloWorld hw;
+    hw.sayHello();
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\section{结论}
+\begin{frame}
+	\frametitle{结论}
+	\begin{itemize}
+		\item 易于使用
+		\item 效果出色
+	\end{itemize}
+\end{frame}
+
+\section{参考文献}
+\begin{frame}[allowframebreaks]
+    \frametitle{参考文献}
+    \reference
+\end{frame}
+
+\end{document}
