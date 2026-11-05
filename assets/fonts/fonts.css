@@ -1,42 +1,49 @@
 @font-face {
-  font-family: 'Host Grotesk';
+  font-family: 'Hanken Grotesk';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(dd40c482b8461a18.woff2) format('truetype');
+  src: url(cf4b8930b864b433.woff2) format('truetype');
 }
 @font-face {
-  font-family: 'Host Grotesk';
+  font-family: 'Hanken Grotesk';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(bf18ccf67a84f2cf.woff2) format('truetype');
+  src: url(bac34dd4b9537444.woff2) format('truetype');
 }
 @font-face {
-  font-family: 'Host Grotesk';
+  font-family: 'Hanken Grotesk';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(402f22087032898b.woff2) format('truetype');
+  src: url(0b905a4fc43ece05.woff2) format('truetype');
 }
 @font-face {
-  font-family: 'Host Grotesk';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(e5879974d1a87198.woff2) format('truetype');
-}
-@font-face {
-  font-family: 'JetBrains Mono';
+  font-family: 'Newsreader';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(6d83b1a12212ea9e.woff2) format('truetype');
+  src: url(d6c65600eb0149bc.woff2) format('truetype');
 }
 @font-face {
-  font-family: 'JetBrains Mono';
+  font-family: 'Newsreader';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(655ecee898b68ff3.woff2) format('truetype');
+  src: url(3208926ba69d6886.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(151ae355673a2936.woff2) format('truetype');
+}
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(33e1f2853df3544d.woff2) format('truetype');
 }

@@ -1,0 +1,1275 @@
+{
+  "id": "atlas",
+  "name": "十国印章台",
+  "label": "十枚铜印、抽象地图浮雕和路线组成的永昌世界项目交互示意；不是实际游戏截图或精确疆界。",
+  "units": "concept",
+  "angle": -28,
+  "turn": {
+    "mode": "still"
+  },
+  "camera": {
+    "elev": 24
+  },
+  "steps": 132,
+  "exposure": 1.15,
+  "supports": [
+    "three-quarter",
+    "front",
+    "side",
+    "top"
+  ],
+  "materials": {
+    "shell": {
+      "kind": "paint",
+      "color": "#293338",
+      "finish": "satin"
+    },
+    "ceramic": {
+      "kind": "plastic",
+      "color": "#e7e4da",
+      "finish": "satin"
+    },
+    "resin": {
+      "kind": "plastic",
+      "color": "accent",
+      "finish": "gloss"
+    },
+    "alloy": {
+      "kind": "metal",
+      "color": "#a4adb0",
+      "finish": "satin"
+    },
+    "brass": {
+      "kind": "metal",
+      "color": "#bb8c42",
+      "finish": "satin"
+    },
+    "chrome": {
+      "kind": "chrome",
+      "color": "#c8cdd0",
+      "finish": "gloss"
+    },
+    "rubber": {
+      "kind": "rubber",
+      "color": "#202525",
+      "finish": "matte"
+    },
+    "screen": {
+      "kind": "paint",
+      "color": "#081b1a",
+      "finish": "gloss"
+    },
+    "glow": {
+      "kind": "light",
+      "color": "#fff0cc",
+      "finish": "satin"
+    },
+    "paper": {
+      "kind": "paint",
+      "color": "#e7dec5",
+      "finish": "matte"
+    },
+    "walnut": {
+      "kind": "wood",
+      "color": "#523125",
+      "finish": "satin",
+      "grain": "x"
+    },
+    "copper": {
+      "kind": "metal",
+      "color": "#a56142",
+      "finish": "satin"
+    },
+    "ink": {
+      "kind": "paint",
+      "color": "#19302f",
+      "finish": "satin"
+    },
+    "ribbon": {
+      "kind": "fabric",
+      "color": "accent",
+      "finish": "matte"
+    }
+  },
+  "colors": [
+    {
+      "id": "project",
+      "name": "项目色",
+      "accent": "#d6a459"
+    }
+  ],
+  "parts": [
+    {
+      "type": "box",
+      "name": "map pedestal",
+      "mat": "walnut",
+      "at": [
+        0,
+        0.055,
+        0
+      ],
+      "size": [
+        1.16,
+        0.1,
+        0.79
+      ],
+      "round": 0.045
+    },
+    {
+      "type": "box",
+      "name": "copper binding",
+      "mat": "copper",
+      "at": [
+        0,
+        0.111,
+        0
+      ],
+      "size": [
+        1.13,
+        0.028,
+        0.76
+      ],
+      "round": 0.015
+    },
+    {
+      "type": "box",
+      "name": "map parchment",
+      "mat": "paper",
+      "at": [
+        0,
+        0.132,
+        0
+      ],
+      "size": [
+        1.095,
+        0.025,
+        0.725
+      ],
+      "round": 0.012
+    },
+    {
+      "type": "box",
+      "name": "abstract region 0",
+      "mat": "ink",
+      "at": [
+        -0.4,
+        0.157,
+        -0.22
+      ],
+      "size": [
+        0.23,
+        0.018,
+        0.15
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        -12,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 0",
+      "mat": "brass",
+      "at": [
+        -0.4,
+        0.182,
+        -0.22
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 0",
+      "mat": "copper",
+      "at": [
+        -0.4,
+        0.218,
+        -0.22
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        -12,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 0",
+      "mat": "brass",
+      "at": [
+        -0.4,
+        0.244,
+        -0.22
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 0",
+      "mat": "resin",
+      "at": [
+        -0.4,
+        0.27,
+        -0.22
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 1",
+      "mat": "copper",
+      "at": [
+        -0.16,
+        0.157,
+        -0.22
+      ],
+      "size": [
+        0.24,
+        0.018,
+        0.17
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 1",
+      "mat": "brass",
+      "at": [
+        -0.16,
+        0.182,
+        -0.22
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 1",
+      "mat": "copper",
+      "at": [
+        -0.16,
+        0.218,
+        -0.22
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 1",
+      "mat": "brass",
+      "at": [
+        -0.16,
+        0.244,
+        -0.22
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 1",
+      "mat": "resin",
+      "at": [
+        -0.16,
+        0.27,
+        -0.22
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 2",
+      "mat": "copper",
+      "at": [
+        0.12,
+        0.157,
+        -0.23
+      ],
+      "size": [
+        0.24,
+        0.018,
+        0.14
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        -6,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 2",
+      "mat": "brass",
+      "at": [
+        0.12,
+        0.182,
+        -0.23
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 2",
+      "mat": "copper",
+      "at": [
+        0.12,
+        0.218,
+        -0.23
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        -6,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 2",
+      "mat": "brass",
+      "at": [
+        0.12,
+        0.244,
+        -0.23
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 2",
+      "mat": "resin",
+      "at": [
+        0.12,
+        0.27,
+        -0.23
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 3",
+      "mat": "ink",
+      "at": [
+        0.38,
+        0.157,
+        -0.18
+      ],
+      "size": [
+        0.2,
+        0.018,
+        0.23
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        14,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 3",
+      "mat": "brass",
+      "at": [
+        0.38,
+        0.182,
+        -0.18
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 3",
+      "mat": "copper",
+      "at": [
+        0.38,
+        0.218,
+        -0.18
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        14,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 3",
+      "mat": "brass",
+      "at": [
+        0.38,
+        0.244,
+        -0.18
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 3",
+      "mat": "resin",
+      "at": [
+        0.38,
+        0.27,
+        -0.18
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 4",
+      "mat": "copper",
+      "at": [
+        -0.43,
+        0.157,
+        0.01
+      ],
+      "size": [
+        0.18,
+        0.018,
+        0.23
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 4",
+      "mat": "brass",
+      "at": [
+        -0.43,
+        0.182,
+        0.01
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 4",
+      "mat": "copper",
+      "at": [
+        -0.43,
+        0.218,
+        0.01
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 4",
+      "mat": "brass",
+      "at": [
+        -0.43,
+        0.244,
+        0.01
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 4",
+      "mat": "resin",
+      "at": [
+        -0.43,
+        0.27,
+        0.01
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 5",
+      "mat": "copper",
+      "at": [
+        -0.19,
+        0.157,
+        0
+      ],
+      "size": [
+        0.22,
+        0.018,
+        0.19
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        -12,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 5",
+      "mat": "brass",
+      "at": [
+        -0.19,
+        0.182,
+        0
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 5",
+      "mat": "copper",
+      "at": [
+        -0.19,
+        0.218,
+        0
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        -12,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 5",
+      "mat": "brass",
+      "at": [
+        -0.19,
+        0.244,
+        0
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 5",
+      "mat": "resin",
+      "at": [
+        -0.19,
+        0.27,
+        0
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 6",
+      "mat": "ink",
+      "at": [
+        0.08,
+        0.157,
+        -0.015
+      ],
+      "size": [
+        0.25,
+        0.018,
+        0.22
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        9,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 6",
+      "mat": "brass",
+      "at": [
+        0.08,
+        0.182,
+        -0.015
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 6",
+      "mat": "copper",
+      "at": [
+        0.08,
+        0.218,
+        -0.015
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        9,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 6",
+      "mat": "brass",
+      "at": [
+        0.08,
+        0.244,
+        -0.015
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 6",
+      "mat": "resin",
+      "at": [
+        0.08,
+        0.27,
+        -0.015
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 7",
+      "mat": "copper",
+      "at": [
+        0.34,
+        0.157,
+        0.075
+      ],
+      "size": [
+        0.25,
+        0.018,
+        0.21
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        -5,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 7",
+      "mat": "brass",
+      "at": [
+        0.34,
+        0.182,
+        0.075
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 7",
+      "mat": "copper",
+      "at": [
+        0.34,
+        0.218,
+        0.075
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        -5,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 7",
+      "mat": "brass",
+      "at": [
+        0.34,
+        0.244,
+        0.075
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 7",
+      "mat": "resin",
+      "at": [
+        0.34,
+        0.27,
+        0.075
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 8",
+      "mat": "copper",
+      "at": [
+        -0.27,
+        0.157,
+        0.23
+      ],
+      "size": [
+        0.28,
+        0.018,
+        0.18
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 8",
+      "mat": "brass",
+      "at": [
+        -0.27,
+        0.182,
+        0.23
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 8",
+      "mat": "copper",
+      "at": [
+        -0.27,
+        0.218,
+        0.23
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 8",
+      "mat": "brass",
+      "at": [
+        -0.27,
+        0.244,
+        0.23
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 8",
+      "mat": "resin",
+      "at": [
+        -0.27,
+        0.27,
+        0.23
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "box",
+      "name": "abstract region 9",
+      "mat": "ink",
+      "at": [
+        0.02,
+        0.157,
+        0.24
+      ],
+      "size": [
+        0.27,
+        0.018,
+        0.19
+      ],
+      "round": 0.028,
+      "rot": [
+        0,
+        -8,
+        0
+      ]
+    },
+    {
+      "type": "cylinder",
+      "name": "seal footing 9",
+      "mat": "brass",
+      "at": [
+        0.02,
+        0.182,
+        0.24
+      ],
+      "r": 0.054,
+      "h": 0.036,
+      "axis": "y",
+      "round": 0.0072
+    },
+    {
+      "type": "box",
+      "name": "seal body 9",
+      "mat": "copper",
+      "at": [
+        0.02,
+        0.218,
+        0.24
+      ],
+      "size": [
+        0.077,
+        0.046,
+        0.077
+      ],
+      "round": 0.012,
+      "rot": [
+        0,
+        -8,
+        0
+      ]
+    },
+    {
+      "type": "torus",
+      "name": "seal shoulder 9",
+      "mat": "brass",
+      "at": [
+        0.02,
+        0.244,
+        0.24
+      ],
+      "R": 0.033,
+      "r": 0.008,
+      "axis": "y"
+    },
+    {
+      "type": "ellipsoid",
+      "name": "seal finial 9",
+      "mat": "resin",
+      "at": [
+        0.02,
+        0.27,
+        0.24
+      ],
+      "size": [
+        0.045,
+        0.053,
+        0.032
+      ]
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 0-1",
+      "mat": "brass",
+      "points": [
+        [
+          -0.4,
+          0.174,
+          -0.22
+        ],
+        [
+          -0.28,
+          0.18,
+          -0.22
+        ],
+        [
+          -0.16,
+          0.174,
+          -0.22
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 1-2",
+      "mat": "brass",
+      "points": [
+        [
+          -0.16,
+          0.174,
+          -0.22
+        ],
+        [
+          -0.020000000000000004,
+          0.18,
+          -0.225
+        ],
+        [
+          0.12,
+          0.174,
+          -0.23
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 2-3",
+      "mat": "brass",
+      "points": [
+        [
+          0.12,
+          0.174,
+          -0.23
+        ],
+        [
+          0.25,
+          0.18,
+          -0.20500000000000002
+        ],
+        [
+          0.38,
+          0.174,
+          -0.18
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 0-4",
+      "mat": "brass",
+      "points": [
+        [
+          -0.4,
+          0.174,
+          -0.22
+        ],
+        [
+          -0.41500000000000004,
+          0.18,
+          -0.105
+        ],
+        [
+          -0.43,
+          0.174,
+          0.01
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 4-5",
+      "mat": "brass",
+      "points": [
+        [
+          -0.43,
+          0.174,
+          0.01
+        ],
+        [
+          -0.31,
+          0.18,
+          0.005
+        ],
+        [
+          -0.19,
+          0.174,
+          0
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 5-6",
+      "mat": "brass",
+      "points": [
+        [
+          -0.19,
+          0.174,
+          0
+        ],
+        [
+          -0.055,
+          0.18,
+          -0.0075
+        ],
+        [
+          0.08,
+          0.174,
+          -0.015
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 6-7",
+      "mat": "brass",
+      "points": [
+        [
+          0.08,
+          0.174,
+          -0.015
+        ],
+        [
+          0.21000000000000002,
+          0.18,
+          0.03
+        ],
+        [
+          0.34,
+          0.174,
+          0.075
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 5-8",
+      "mat": "brass",
+      "points": [
+        [
+          -0.19,
+          0.174,
+          0
+        ],
+        [
+          -0.23,
+          0.18,
+          0.115
+        ],
+        [
+          -0.27,
+          0.174,
+          0.23
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "path",
+      "name": "inlaid route 6-9",
+      "mat": "brass",
+      "points": [
+        [
+          0.08,
+          0.174,
+          -0.015
+        ],
+        [
+          0.05,
+          0.18,
+          0.11249999999999999
+        ],
+        [
+          0.02,
+          0.174,
+          0.24
+        ]
+      ],
+      "r": 0.003,
+      "smooth": false
+    },
+    {
+      "type": "tube",
+      "name": "frame engraving",
+      "mat": "brass",
+      "from": [
+        -0.51,
+        0.151,
+        -0.32
+      ],
+      "to": [
+        0.51,
+        0.151,
+        -0.32
+      ],
+      "r": 0.0025,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "frame engraving",
+      "mat": "brass",
+      "from": [
+        -0.51,
+        0.151,
+        0.32
+      ],
+      "to": [
+        0.51,
+        0.151,
+        0.32
+      ],
+      "r": 0.0025,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "frame engraving",
+      "mat": "brass",
+      "from": [
+        -0.51,
+        0.151,
+        -0.32
+      ],
+      "to": [
+        -0.51,
+        0.151,
+        0.32
+      ],
+      "r": 0.0025,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "frame engraving",
+      "mat": "brass",
+      "from": [
+        0.51,
+        0.151,
+        -0.32
+      ],
+      "to": [
+        0.51,
+        0.151,
+        0.32
+      ],
+      "r": 0.0025,
+      "cap": "round"
+    }
+  ]
+}

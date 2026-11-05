@@ -1,0 +1,840 @@
+{
+  "id": "library",
+  "name": "知识讲台",
+  "label": "纸页、装订书册、阅读灯与讲台组成的学习资料交互示意。",
+  "units": "concept",
+  "angle": -28,
+  "turn": {
+    "mode": "still"
+  },
+  "camera": {
+    "elev": 24
+  },
+  "steps": 132,
+  "exposure": 1.15,
+  "supports": [
+    "three-quarter",
+    "front",
+    "side",
+    "top"
+  ],
+  "materials": {
+    "shell": {
+      "kind": "paint",
+      "color": "#293338",
+      "finish": "satin"
+    },
+    "ceramic": {
+      "kind": "plastic",
+      "color": "#e7e4da",
+      "finish": "satin"
+    },
+    "resin": {
+      "kind": "plastic",
+      "color": "accent",
+      "finish": "gloss"
+    },
+    "alloy": {
+      "kind": "metal",
+      "color": "#a4adb0",
+      "finish": "satin"
+    },
+    "brass": {
+      "kind": "metal",
+      "color": "#bb8c42",
+      "finish": "satin"
+    },
+    "chrome": {
+      "kind": "chrome",
+      "color": "#c8cdd0",
+      "finish": "gloss"
+    },
+    "rubber": {
+      "kind": "rubber",
+      "color": "#202525",
+      "finish": "matte"
+    },
+    "screen": {
+      "kind": "paint",
+      "color": "#081b1a",
+      "finish": "gloss"
+    },
+    "glow": {
+      "kind": "light",
+      "color": "#fff0cc",
+      "finish": "satin"
+    },
+    "paper": {
+      "kind": "paint",
+      "color": "#e7dec5",
+      "finish": "matte"
+    },
+    "walnut": {
+      "kind": "wood",
+      "color": "#523125",
+      "finish": "satin",
+      "grain": "x"
+    },
+    "copper": {
+      "kind": "metal",
+      "color": "#a56142",
+      "finish": "satin"
+    },
+    "ink": {
+      "kind": "paint",
+      "color": "#19302f",
+      "finish": "satin"
+    },
+    "ribbon": {
+      "kind": "fabric",
+      "color": "accent",
+      "finish": "matte"
+    }
+  },
+  "colors": [
+    {
+      "id": "project",
+      "name": "项目色",
+      "accent": "#bd6b55"
+    }
+  ],
+  "parts": [
+    {
+      "type": "box",
+      "name": "lectern foot",
+      "mat": "walnut",
+      "at": [
+        0.23,
+        0.045,
+        -0.1
+      ],
+      "size": [
+        0.46,
+        0.08,
+        0.38
+      ],
+      "round": 0.03
+    },
+    {
+      "type": "box",
+      "name": "lectern brass shoe",
+      "mat": "brass",
+      "at": [
+        0.23,
+        0.092,
+        -0.1
+      ],
+      "size": [
+        0.39,
+        0.018,
+        0.31
+      ],
+      "round": 0.007
+    },
+    {
+      "type": "tube",
+      "name": "lectern curved post",
+      "mat": "walnut",
+      "from": [
+        0.23,
+        0.1,
+        -0.1
+      ],
+      "to": [
+        0.23,
+        0.54,
+        -0.1
+      ],
+      "r": 0.039,
+      "cap": "round"
+    },
+    {
+      "type": "box",
+      "name": "lectern inclined top",
+      "mat": "walnut",
+      "at": [
+        0.23,
+        0.58,
+        -0.12
+      ],
+      "size": [
+        0.57,
+        0.045,
+        0.39
+      ],
+      "round": 0.014,
+      "rot": [
+        -10,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "tube",
+      "name": "lectern lip",
+      "mat": "brass",
+      "from": [
+        -0.055,
+        0.61,
+        0.055
+      ],
+      "to": [
+        0.515,
+        0.61,
+        0.055
+      ],
+      "r": 0.012,
+      "cap": "round"
+    },
+    {
+      "type": "box",
+      "name": "book 0 lower cover",
+      "mat": "resin",
+      "at": [
+        -0.25,
+        0.03,
+        0.12
+      ],
+      "size": [
+        0.452,
+        0.022,
+        0.398
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "book 0 pages",
+      "mat": "paper",
+      "at": [
+        -0.244,
+        0.096,
+        0.12
+      ],
+      "size": [
+        0.418,
+        0.10500000000000001,
+        0.36
+      ],
+      "round": 0.004
+    },
+    {
+      "type": "box",
+      "name": "book 0 upper cover",
+      "mat": "resin",
+      "at": [
+        -0.25,
+        0.153,
+        0.12
+      ],
+      "size": [
+        0.452,
+        0.022,
+        0.398
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "book 0 rounded spine",
+      "mat": "resin",
+      "at": [
+        -0.471,
+        0.091,
+        0.12
+      ],
+      "size": [
+        0.032,
+        0.14,
+        0.398
+      ],
+      "round": 0.015
+    },
+    {
+      "type": "box",
+      "name": "book 0 page line 0",
+      "mat": "brass",
+      "at": [
+        -0.24,
+        0.057999999999999996,
+        0.304
+      ],
+      "size": [
+        0.395,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 0 page line 1",
+      "mat": "brass",
+      "at": [
+        -0.24,
+        0.08199999999999999,
+        0.304
+      ],
+      "size": [
+        0.395,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 0 page line 2",
+      "mat": "brass",
+      "at": [
+        -0.24,
+        0.106,
+        0.304
+      ],
+      "size": [
+        0.395,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 0 spine band -1",
+      "mat": "brass",
+      "at": [
+        -0.488,
+        0.091,
+        0.009800000000000003
+      ],
+      "size": [
+        0.006,
+        0.11800000000000001,
+        0.018
+      ],
+      "round": 0.002
+    },
+    {
+      "type": "box",
+      "name": "book 0 spine band 1",
+      "mat": "brass",
+      "at": [
+        -0.488,
+        0.091,
+        0.2302
+      ],
+      "size": [
+        0.006,
+        0.11800000000000001,
+        0.018
+      ],
+      "round": 0.002
+    },
+    {
+      "type": "box",
+      "name": "book 1 lower cover",
+      "mat": "ink",
+      "at": [
+        -0.22,
+        0.16,
+        0.13
+      ],
+      "size": [
+        0.42200000000000004,
+        0.022,
+        0.368
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "book 1 pages",
+      "mat": "paper",
+      "at": [
+        -0.214,
+        0.216,
+        0.13
+      ],
+      "size": [
+        0.388,
+        0.08499999999999999,
+        0.32999999999999996
+      ],
+      "round": 0.004
+    },
+    {
+      "type": "box",
+      "name": "book 1 upper cover",
+      "mat": "ink",
+      "at": [
+        -0.22,
+        0.263,
+        0.13
+      ],
+      "size": [
+        0.42200000000000004,
+        0.022,
+        0.368
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "book 1 rounded spine",
+      "mat": "ink",
+      "at": [
+        -0.42600000000000005,
+        0.211,
+        0.13
+      ],
+      "size": [
+        0.032,
+        0.12,
+        0.368
+      ],
+      "round": 0.015
+    },
+    {
+      "type": "box",
+      "name": "book 1 page line 0",
+      "mat": "brass",
+      "at": [
+        -0.21,
+        0.188,
+        0.299
+      ],
+      "size": [
+        0.365,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 1 page line 1",
+      "mat": "brass",
+      "at": [
+        -0.21,
+        0.212,
+        0.299
+      ],
+      "size": [
+        0.365,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 1 page line 2",
+      "mat": "brass",
+      "at": [
+        -0.21,
+        0.236,
+        0.299
+      ],
+      "size": [
+        0.365,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 1 spine band -1",
+      "mat": "brass",
+      "at": [
+        -0.44300000000000006,
+        0.211,
+        0.02850000000000001
+      ],
+      "size": [
+        0.006,
+        0.098,
+        0.018
+      ],
+      "round": 0.002
+    },
+    {
+      "type": "box",
+      "name": "book 1 spine band 1",
+      "mat": "brass",
+      "at": [
+        -0.44300000000000006,
+        0.211,
+        0.23149999999999998
+      ],
+      "size": [
+        0.006,
+        0.098,
+        0.018
+      ],
+      "round": 0.002
+    },
+    {
+      "type": "box",
+      "name": "book 2 lower cover",
+      "mat": "resin",
+      "at": [
+        -0.24,
+        0.27,
+        0.12
+      ],
+      "size": [
+        0.47200000000000003,
+        0.022,
+        0.388
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "book 2 pages",
+      "mat": "paper",
+      "at": [
+        -0.23399999999999999,
+        0.316,
+        0.12
+      ],
+      "size": [
+        0.438,
+        0.065,
+        0.35
+      ],
+      "round": 0.004
+    },
+    {
+      "type": "box",
+      "name": "book 2 upper cover",
+      "mat": "resin",
+      "at": [
+        -0.24,
+        0.353,
+        0.12
+      ],
+      "size": [
+        0.47200000000000003,
+        0.022,
+        0.388
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "book 2 rounded spine",
+      "mat": "resin",
+      "at": [
+        -0.471,
+        0.311,
+        0.12
+      ],
+      "size": [
+        0.032,
+        0.09999999999999999,
+        0.388
+      ],
+      "round": 0.015
+    },
+    {
+      "type": "box",
+      "name": "book 2 page line 0",
+      "mat": "brass",
+      "at": [
+        -0.22999999999999998,
+        0.298,
+        0.299
+      ],
+      "size": [
+        0.41500000000000004,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 2 page line 1",
+      "mat": "brass",
+      "at": [
+        -0.22999999999999998,
+        0.322,
+        0.299
+      ],
+      "size": [
+        0.41500000000000004,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 2 page line 2",
+      "mat": "brass",
+      "at": [
+        -0.22999999999999998,
+        0.346,
+        0.299
+      ],
+      "size": [
+        0.41500000000000004,
+        0.0025,
+        0.003
+      ],
+      "round": 0.001
+    },
+    {
+      "type": "box",
+      "name": "book 2 spine band -1",
+      "mat": "brass",
+      "at": [
+        -0.488,
+        0.311,
+        0.012700000000000003
+      ],
+      "size": [
+        0.006,
+        0.078,
+        0.018
+      ],
+      "round": 0.002
+    },
+    {
+      "type": "box",
+      "name": "book 2 spine band 1",
+      "mat": "brass",
+      "at": [
+        -0.488,
+        0.311,
+        0.2273
+      ],
+      "size": [
+        0.006,
+        0.078,
+        0.018
+      ],
+      "round": 0.002
+    },
+    {
+      "type": "box",
+      "name": "open book left",
+      "mat": "paper",
+      "at": [
+        0.085,
+        0.625,
+        -0.105
+      ],
+      "size": [
+        0.24,
+        0.022,
+        0.27
+      ],
+      "round": 0.009,
+      "rot": [
+        0,
+        0,
+        -7
+      ]
+    },
+    {
+      "type": "box",
+      "name": "open book right",
+      "mat": "paper",
+      "at": [
+        0.335,
+        0.625,
+        -0.105
+      ],
+      "size": [
+        0.24,
+        0.022,
+        0.27
+      ],
+      "round": 0.009,
+      "rot": [
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "type": "tube",
+      "name": "open book gutter",
+      "mat": "brass",
+      "from": [
+        0.21,
+        0.62,
+        -0.24
+      ],
+      "to": [
+        0.21,
+        0.62,
+        0.03
+      ],
+      "r": 0.01,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "open page text 0",
+      "mat": "ink",
+      "from": [
+        -0.005,
+        0.64,
+        -0.2
+      ],
+      "to": [
+        0.155,
+        0.62,
+        -0.2
+      ],
+      "r": 0.002,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "open page text 1",
+      "mat": "ink",
+      "from": [
+        -0.005,
+        0.64,
+        -0.159
+      ],
+      "to": [
+        0.155,
+        0.62,
+        -0.159
+      ],
+      "r": 0.002,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "open page text 2",
+      "mat": "ink",
+      "from": [
+        -0.005,
+        0.64,
+        -0.11800000000000001
+      ],
+      "to": [
+        0.155,
+        0.62,
+        -0.11800000000000001
+      ],
+      "r": 0.002,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "open page text 3",
+      "mat": "ink",
+      "from": [
+        -0.005,
+        0.64,
+        -0.07700000000000001
+      ],
+      "to": [
+        0.155,
+        0.62,
+        -0.07700000000000001
+      ],
+      "r": 0.002,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "open page text 4",
+      "mat": "ink",
+      "from": [
+        -0.005,
+        0.64,
+        -0.036000000000000004
+      ],
+      "to": [
+        0.155,
+        0.62,
+        -0.036000000000000004
+      ],
+      "r": 0.002,
+      "cap": "round"
+    },
+    {
+      "type": "cylinder",
+      "name": "reading lamp base",
+      "mat": "brass",
+      "at": [
+        -0.31,
+        0.378,
+        -0.15
+      ],
+      "r": 0.07,
+      "h": 0.028,
+      "axis": "y",
+      "round": 0.005600000000000001
+    },
+    {
+      "type": "path",
+      "name": "gooseneck",
+      "mat": "brass",
+      "points": [
+        [
+          -0.31,
+          0.4,
+          -0.15
+        ],
+        [
+          -0.35,
+          0.62,
+          -0.2
+        ],
+        [
+          -0.25,
+          0.77,
+          -0.17
+        ],
+        [
+          -0.12,
+          0.73,
+          -0.11
+        ]
+      ],
+      "r": 0.012,
+      "smooth": true
+    },
+    {
+      "type": "shade",
+      "name": "reading hood",
+      "mat": "resin",
+      "from": [
+        -0.12,
+        0.73,
+        -0.11
+      ],
+      "to": [
+        -0.07,
+        0.66,
+        -0.08
+      ],
+      "r1": 0.022,
+      "r2": 0.064,
+      "t": 0.009,
+      "bulge": 0.6,
+      "innerMat": "paper"
+    },
+    {
+      "type": "sphere",
+      "name": "lamp pearl",
+      "mat": "glow",
+      "at": [
+        -0.075,
+        0.67,
+        -0.08
+      ],
+      "r": 0.028
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "id": "training",
+  "name": "训练计时台",
+  "label": "三层进阶台与机械计时器表达练习、复测和进阶的交互示意。",
+  "units": "concept",
+  "angle": -28,
+  "turn": {
+    "mode": "still"
+  },
+  "camera": {
+    "elev": 24
+  },
+  "steps": 132,
+  "exposure": 1.15,
+  "supports": [
+    "three-quarter",
+    "front",
+    "side",
+    "top"
+  ],
+  "materials": {
+    "shell": {
+      "kind": "paint",
+      "color": "#293338",
+      "finish": "satin"
+    },
+    "ceramic": {
+      "kind": "plastic",
+      "color": "#e7e4da",
+      "finish": "satin"
+    },
+    "resin": {
+      "kind": "plastic",
+      "color": "accent",
+      "finish": "gloss"
+    },
+    "alloy": {
+      "kind": "metal",
+      "color": "#a4adb0",
+      "finish": "satin"
+    },
+    "brass": {
+      "kind": "metal",
+      "color": "#bb8c42",
+      "finish": "satin"
+    },
+    "chrome": {
+      "kind": "chrome",
+      "color": "#c8cdd0",
+      "finish": "gloss"
+    },
+    "rubber": {
+      "kind": "rubber",
+      "color": "#202525",
+      "finish": "matte"
+    },
+    "screen": {
+      "kind": "paint",
+      "color": "#081b1a",
+      "finish": "gloss"
+    },
+    "glow": {
+      "kind": "light",
+      "color": "#fff0cc",
+      "finish": "satin"
+    },
+    "paper": {
+      "kind": "paint",
+      "color": "#e7dec5",
+      "finish": "matte"
+    },
+    "walnut": {
+      "kind": "wood",
+      "color": "#523125",
+      "finish": "satin",
+      "grain": "x"
+    },
+    "copper": {
+      "kind": "metal",
+      "color": "#a56142",
+      "finish": "satin"
+    },
+    "ink": {
+      "kind": "paint",
+      "color": "#19302f",
+      "finish": "satin"
+    },
+    "ribbon": {
+      "kind": "fabric",
+      "color": "accent",
+      "finish": "matte"
+    }
+  },
+  "colors": [
+    {
+      "id": "project",
+      "name": "项目色",
+      "accent": "#c4ba68"
+    }
+  ],
+  "parts": [
+    {
+      "type": "box",
+      "name": "training base",
+      "mat": "shell",
+      "at": [
+        0,
+        0.06,
+        0
+      ],
+      "size": [
+        1.05,
+        0.11,
+        0.65
+      ],
+      "round": 0.035
+    },
+    {
+      "type": "box",
+      "name": "brass base inset",
+      "mat": "brass",
+      "at": [
+        0,
+        0.119,
+        0
+      ],
+      "size": [
+        1.01,
+        0.018,
+        0.61
+      ],
+      "round": 0.008
+    },
+    {
+      "type": "box",
+      "name": "progress tier 0",
+      "mat": "ceramic",
+      "at": [
+        -0.34,
+        0.21000000000000002,
+        0.07
+      ],
+      "size": [
+        0.24,
+        0.16,
+        0.42
+      ],
+      "round": 0.025
+    },
+    {
+      "type": "box",
+      "name": "tier cap 0",
+      "mat": "resin",
+      "at": [
+        -0.34,
+        0.30000000000000004,
+        0.07
+      ],
+      "size": [
+        0.247,
+        0.022,
+        0.428
+      ],
+      "round": 0.009
+    },
+    {
+      "type": "box",
+      "name": "tier light 0",
+      "mat": "glow",
+      "at": [
+        -0.34,
+        0.19,
+        0.285
+      ],
+      "size": [
+        0.15,
+        0.015,
+        0.009
+      ],
+      "round": 0.004
+    },
+    {
+      "type": "cylinder",
+      "name": "achievement stud 0-0",
+      "mat": "brass",
+      "at": [
+        -0.34,
+        0.323,
+        0.1
+      ],
+      "r": 0.012,
+      "h": 0.012,
+      "axis": "y",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "box",
+      "name": "progress tier 1",
+      "mat": "ceramic",
+      "at": [
+        -0.07,
+        0.265,
+        0.07
+      ],
+      "size": [
+        0.24,
+        0.27,
+        0.42
+      ],
+      "round": 0.025
+    },
+    {
+      "type": "box",
+      "name": "tier cap 1",
+      "mat": "resin",
+      "at": [
+        -0.07,
+        0.41000000000000003,
+        0.07
+      ],
+      "size": [
+        0.247,
+        0.022,
+        0.428
+      ],
+      "round": 0.009
+    },
+    {
+      "type": "box",
+      "name": "tier light 1",
+      "mat": "glow",
+      "at": [
+        -0.07,
+        0.245,
+        0.285
+      ],
+      "size": [
+        0.15,
+        0.015,
+        0.009
+      ],
+      "round": 0.004
+    },
+    {
+      "type": "cylinder",
+      "name": "achievement stud 1-0",
+      "mat": "brass",
+      "at": [
+        -0.0925,
+        0.43300000000000005,
+        0.1
+      ],
+      "r": 0.012,
+      "h": 0.012,
+      "axis": "y",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "cylinder",
+      "name": "achievement stud 1-1",
+      "mat": "brass",
+      "at": [
+        -0.04750000000000001,
+        0.43300000000000005,
+        0.1
+      ],
+      "r": 0.012,
+      "h": 0.012,
+      "axis": "y",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "box",
+      "name": "progress tier 2",
+      "mat": "ceramic",
+      "at": [
+        0.2,
+        0.32,
+        0.07
+      ],
+      "size": [
+        0.24,
+        0.38,
+        0.42
+      ],
+      "round": 0.025
+    },
+    {
+      "type": "box",
+      "name": "tier cap 2",
+      "mat": "resin",
+      "at": [
+        0.2,
+        0.52,
+        0.07
+      ],
+      "size": [
+        0.247,
+        0.022,
+        0.428
+      ],
+      "round": 0.009
+    },
+    {
+      "type": "box",
+      "name": "tier light 2",
+      "mat": "glow",
+      "at": [
+        0.2,
+        0.3,
+        0.285
+      ],
+      "size": [
+        0.15,
+        0.015,
+        0.009
+      ],
+      "round": 0.004
+    },
+    {
+      "type": "cylinder",
+      "name": "achievement stud 2-0",
+      "mat": "brass",
+      "at": [
+        0.15500000000000003,
+        0.543,
+        0.1
+      ],
+      "r": 0.012,
+      "h": 0.012,
+      "axis": "y",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "cylinder",
+      "name": "achievement stud 2-1",
+      "mat": "brass",
+      "at": [
+        0.2,
+        0.543,
+        0.1
+      ],
+      "r": 0.012,
+      "h": 0.012,
+      "axis": "y",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "cylinder",
+      "name": "achievement stud 2-2",
+      "mat": "brass",
+      "at": [
+        0.245,
+        0.543,
+        0.1
+      ],
+      "r": 0.012,
+      "h": 0.012,
+      "axis": "y",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "cylinder",
+      "name": "timer pedestal",
+      "mat": "alloy",
+      "at": [
+        0.31,
+        0.18,
+        -0.22
+      ],
+      "r": 0.09,
+      "h": 0.11,
+      "axis": "y",
+      "round": 0.009
+    },
+    {
+      "type": "tube",
+      "name": "timer stand",
+      "mat": "chrome",
+      "from": [
+        0.31,
+        0.19,
+        -0.22
+      ],
+      "to": [
+        0.31,
+        0.53,
+        -0.22
+      ],
+      "r": 0.025,
+      "cap": "round"
+    },
+    {
+      "type": "cylinder",
+      "name": "timer back",
+      "mat": "brass",
+      "at": [
+        0.31,
+        0.63,
+        -0.19
+      ],
+      "r": 0.204,
+      "h": 0.083,
+      "axis": "z",
+      "round": 0.009
+    },
+    {
+      "type": "cylinder",
+      "name": "timer face",
+      "mat": "paper",
+      "at": [
+        0.31,
+        0.63,
+        -0.14
+      ],
+      "r": 0.177,
+      "h": 0.019,
+      "axis": "z",
+      "round": 0.0038
+    },
+    {
+      "type": "torus",
+      "name": "timer bezel",
+      "mat": "chrome",
+      "at": [
+        0.31,
+        0.63,
+        -0.128
+      ],
+      "R": 0.183,
+      "r": 0.014,
+      "axis": "z"
+    },
+    {
+      "type": "tube",
+      "name": "tick 0",
+      "mat": "ink",
+      "from": [
+        0.31,
+        0.777,
+        -0.125
+      ],
+      "to": [
+        0.31,
+        0.793,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 1",
+      "mat": "ink",
+      "from": [
+        0.38349999999999995,
+        0.7573057343563125,
+        -0.125
+      ],
+      "to": [
+        0.39149999999999996,
+        0.7711621408168635,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 2",
+      "mat": "ink",
+      "from": [
+        0.4373057343563125,
+        0.7035,
+        -0.125
+      ],
+      "to": [
+        0.45116214081686346,
+        0.7115,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 3",
+      "mat": "ink",
+      "from": [
+        0.45699999999999996,
+        0.63,
+        -0.125
+      ],
+      "to": [
+        0.473,
+        0.63,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 4",
+      "mat": "ink",
+      "from": [
+        0.4373057343563125,
+        0.5565,
+        -0.125
+      ],
+      "to": [
+        0.4511621408168635,
+        0.5485,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 5",
+      "mat": "ink",
+      "from": [
+        0.38349999999999995,
+        0.5026942656436875,
+        -0.125
+      ],
+      "to": [
+        0.39149999999999996,
+        0.4888378591831365,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 6",
+      "mat": "ink",
+      "from": [
+        0.31,
+        0.483,
+        -0.125
+      ],
+      "to": [
+        0.31,
+        0.46699999999999997,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 7",
+      "mat": "ink",
+      "from": [
+        0.23650000000000004,
+        0.5026942656436875,
+        -0.125
+      ],
+      "to": [
+        0.22850000000000004,
+        0.4888378591831365,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 8",
+      "mat": "ink",
+      "from": [
+        0.18269426564368754,
+        0.5565,
+        -0.125
+      ],
+      "to": [
+        0.1688378591831365,
+        0.5485,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 9",
+      "mat": "ink",
+      "from": [
+        0.163,
+        0.63,
+        -0.125
+      ],
+      "to": [
+        0.147,
+        0.63,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 10",
+      "mat": "ink",
+      "from": [
+        0.18269426564368754,
+        0.7035,
+        -0.125
+      ],
+      "to": [
+        0.1688378591831365,
+        0.7115,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "tick 11",
+      "mat": "ink",
+      "from": [
+        0.23649999999999993,
+        0.7573057343563124,
+        -0.125
+      ],
+      "to": [
+        0.22849999999999993,
+        0.7711621408168634,
+        -0.125
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "minute hand",
+      "mat": "ink",
+      "from": [
+        0.31,
+        0.63,
+        -0.115
+      ],
+      "to": [
+        0.24,
+        0.735,
+        -0.115
+      ],
+      "r": 0.006,
+      "cap": "round"
+    },
+    {
+      "type": "tube",
+      "name": "second hand",
+      "mat": "resin",
+      "from": [
+        0.31,
+        0.63,
+        -0.108
+      ],
+      "to": [
+        0.41,
+        0.665,
+        -0.108
+      ],
+      "r": 0.0035,
+      "cap": "round"
+    },
+    {
+      "type": "cylinder",
+      "name": "timer center",
+      "mat": "brass",
+      "at": [
+        0.31,
+        0.63,
+        -0.103
+      ],
+      "r": 0.013,
+      "h": 0.012,
+      "axis": "z",
+      "round": 0.0024000000000000002
+    },
+    {
+      "type": "cylinder",
+      "name": "timer crown",
+      "mat": "chrome",
+      "at": [
+        0.31,
+        0.85,
+        -0.19
+      ],
+      "r": 0.025,
+      "h": 0.048,
+      "axis": "y",
+      "round": 0.009
+    },
+    {
+      "type": "torus",
+      "name": "timer carrying loop",
+      "mat": "brass",
+      "at": [
+        0.31,
+        0.913,
+        -0.19
+      ],
+      "R": 0.044,
+      "r": 0.008,
+      "axis": "z"
+    }
+  ]
+}

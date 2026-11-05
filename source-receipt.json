@@ -2,25 +2,46 @@
   "repo": "tangyixiao/Shaoxing-No.1-High-School-LaTeX-Beamer-Template",
   "sourceBranch": "main",
   "sourceCommit": "21e47a7e76818343b5a346f6487b0af65c6daffb",
+  "designVersion": 3,
+  "direction": {
+    "visualConcept": "博雅红、象牙纸与黑墨的学术投影片版式：封面用真实校徽和 Beamer 首页作为整幅投影，左侧仅留窄幅论文式题签，下方以源文件/编译命令/成稿三联结构展开。不是软件功能 landing page。事实边界：可编辑模板，不把学校主题等同学校官方背书，不宣称任何机器开箱编译成功。",
+    "layout": "editorial",
+    "palette": {
+      "light": {
+        "bg": "#F0E5D5",
+        "surface": "#FFF8EA",
+        "ink": "#40282C",
+        "muted": "#7a6060",
+        "accent": "#9b3043"
+      },
+      "dark": {
+        "bg": "#2B171D",
+        "surface": "#42222B",
+        "ink": "#FBEBDD",
+        "muted": "#c6a0a4",
+        "accent": "#e9989d"
+      }
+    },
+    "threeConcept": "Three.js 制作深红布面讲义册和一张向前翻起的真实投影片平面，投影片贴实际 PDF 渲染图，侧面显出纸页厚度。不能生成虚构校徽或课堂场景。",
+    "distinctiveInteraction": "切换“源文件 / 编译 / 成稿”三页只改变旁注与真实来源链接；轻转投影片后可正面全尺寸查看 PDF 图，编译按钮跳文档而非假装在线编译。"
+  },
   "media": [
     {
       "src": "assets/media/product-1.webp",
       "alt": "template title slide",
       "url": "https://github.com/tangyixiao/Shaoxing-No.1-High-School-LaTeX-Beamer-Template/blob/21e47a7e76818343b5a346f6487b0af65c6daffb/ShaoxingNo1_BeamerTemplate.pdf",
-      "width": 1600,
-      "height": 901
+      "path": "ShaoxingNo1_BeamerTemplate.pdf"
     },
     {
       "src": "assets/media/product-2.webp",
       "alt": "template content slide",
       "url": "https://github.com/tangyixiao/Shaoxing-No.1-High-School-LaTeX-Beamer-Template/blob/21e47a7e76818343b5a346f6487b0af65c6daffb/ShaoxingNo1_BeamerTemplate.pdf",
-      "width": 1600,
-      "height": 901
+      "path": "ShaoxingNo1_BeamerTemplate.pdf"
     }
   ],
   "skills": [
     "baoyu-design",
     "design-taste-frontend"
   ],
-  "design": "content-first source/product/photography; no rejected template or faux 3D"
+  "flagshipModel": null
 }
