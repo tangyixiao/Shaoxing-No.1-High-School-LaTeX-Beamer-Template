@@ -1,0 +1,26 @@
+name: Validate the bilingual project website
+on:
+  pull_request:
+    paths:
+      - 'project-website/**'
+      - '.github/workflows/check-project-website.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: project-website-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout: project-website
+      - name: Check rendered pages, local links and translations
+        run: python3 project-website/scripts/check.py
+      - name: Exercise desktop and mobile in the runner browser
+        run: python3 project-website/scripts/smoke_browser.py project-website

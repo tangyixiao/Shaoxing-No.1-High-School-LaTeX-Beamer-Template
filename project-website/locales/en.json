@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "description": "Start with a widescreen Beamer example for Chinese text, equations and bibliographic references."
+  },
+  "pages": {
+    "home": {
+      "title": "Typeset a Shaoxing No. 1 High School presentation · {project}"
+    },
+    "features": {
+      "title": "Features · {project}",
+      "description": "Start with a widescreen Beamer example for Chinese text, equations and bibliographic references."
+    },
+    "download": {
+      "title": "Get started · {project}",
+      "description": "Open ShaoxingNo1_BeamerTemplate.pdf to inspect the cover, sections and body typography."
+    },
+    "community": {
+      "title": "Community · {project}",
+      "description": "Find usage guidance, follow discussions and review changes to this project."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "download": "Get started",
+    "community": "Community"
+  },
+  "ui": {
+    "skip_link": "Skip to main content",
+    "navigation": "Main navigation",
+    "open_navigation": "Open navigation",
+    "close_navigation": "Close navigation",
+    "language": "Choose language",
+    "theme": "Choose theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "platforms": "Supported platforms",
+    "github": "GitHub",
+    "view_image": "View full illustration",
+    "feature_more": "Explore features",
+    "download": "Preview the sample PDF",
+    "release_notes": "Source repository",
+    "documentation": "Documentation",
+    "source": "Source repository",
+    "illustration": "First steps",
+    "license": "Apache-2.0 (original source, scripts and docs)"
+  },
+  "hero": {
+    "title": [
+      "Typeset a Shaoxing No. 1 High School presentation"
+    ],
+    "description": [
+      "Start with a widescreen Beamer example for Chinese text, equations and bibliographic references."
+    ],
+    "primary_action": "Preview the sample PDF",
+    "secondary_action": "Explore features"
+  },
+  "preview": {
+    "caption": "First steps",
+    "tabs": [
+      {
+        "label": "Get started",
+        "icon": "book"
+      }
+    ],
+    "items": [
+      {
+        "title": "Preview the slides",
+        "description": "Open ShaoxingNo1_BeamerTemplate.pdf to inspect the cover, sections and body typography.",
+        "icon": "book"
+      },
+      {
+        "title": "Compile your version",
+        "description": "Edit the matching .tex file and follow cmd.md: run XeLaTeX, BibTeX and two more XeLaTeX passes.",
+        "icon": "link"
+      }
+    ]
+  },
+  "features": {
+    "title": "Project features",
+    "groups": [
+      {
+        "title": "Chinese type and mathematics",
+        "description": "The main file loads xeCJK, ctex and AMS packages so you can replace the sample content with your own.",
+        "detail": "",
+        "icon": "layers"
+      },
+      {
+        "title": "Example and bibliography",
+        "description": "Compare the rendered slides with the supplied PDF and manage citations in references.bib.",
+        "detail": "",
+        "icon": "book"
+      }
+    ]
+  },
+  "getting_started": {
+    "title": "Get started · {project}",
+    "steps": [
+      {
+        "title": "Preview the slides",
+        "description": "Open ShaoxingNo1_BeamerTemplate.pdf to inspect the cover, sections and body typography.",
+        "icon": "book"
+      },
+      {
+        "title": "Compile your version",
+        "description": "Edit the matching .tex file and follow cmd.md: run XeLaTeX, BibTeX and two more XeLaTeX passes.",
+        "icon": "link"
+      }
+    ]
+  },
+  "community": {
+    "title": "Community · {project}",
+    "description": "Find usage guidance, follow discussions and review changes to this project.",
+    "links": [
+      {
+        "label": "Help and feedback",
+        "description": "Browse existing reports or describe a reproducible problem.",
+        "icon": "book"
+      },
+      {
+        "label": "Source repository",
+        "description": "Find the project and its maintenance links.",
+        "icon": "link"
+      },
+      {
+        "label": "Review changes",
+        "description": "Review open pull requests or prepare a contribution.",
+        "icon": "code"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "{copyright}"
+  }
+}

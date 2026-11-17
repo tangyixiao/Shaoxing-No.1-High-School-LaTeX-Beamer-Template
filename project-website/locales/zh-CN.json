@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "description": "从一份 16∶9 的 Beamer 示例开始，在同一个模板中编排中文、数学公式和参考文献。"
+  },
+  "pages": {
+    "home": {
+      "title": "用 LaTeX 排一份绍兴一中演示文稿 · {project}"
+    },
+    "features": {
+      "title": "项目特点 · {project}",
+      "description": "从一份 16∶9 的 Beamer 示例开始，在同一个模板中编排中文、数学公式和参考文献。"
+    },
+    "download": {
+      "title": "开始使用 · {project}",
+      "description": "打开 ShaoxingNo1_BeamerTemplate.pdf，确认封面、章节和正文样式。"
+    },
+    "community": {
+      "title": "参与项目 · {project}",
+      "description": "从这里找到使用说明、已有讨论和项目变更。"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "features": "项目特点",
+    "download": "开始使用",
+    "community": "参与项目"
+  },
+  "ui": {
+    "skip_link": "跳转到主要内容",
+    "navigation": "主导航",
+    "open_navigation": "打开导航",
+    "close_navigation": "关闭导航",
+    "language": "选择语言",
+    "theme": "选择主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统",
+    "platforms": "支持的平台",
+    "github": "GitHub",
+    "view_image": "查看完整演示图",
+    "feature_more": "查看详情",
+    "download": "预览示例 PDF",
+    "release_notes": "仓库源代码",
+    "documentation": "使用文档",
+    "source": "仓库源代码",
+    "illustration": "使用路径",
+    "license": "Apache-2.0（原创源码、脚本与文档）"
+  },
+  "hero": {
+    "title": [
+      "用 LaTeX 排一份绍兴一中演示文稿"
+    ],
+    "description": [
+      "从一份 16∶9 的 Beamer 示例开始，在同一个模板中编排中文、数学公式和参考文献。"
+    ],
+    "primary_action": "预览示例 PDF",
+    "secondary_action": "查看详情"
+  },
+  "preview": {
+    "caption": "使用路径",
+    "tabs": [
+      {
+        "label": "开始使用",
+        "icon": "book"
+      }
+    ],
+    "items": [
+      {
+        "title": "先看成品",
+        "description": "打开 ShaoxingNo1_BeamerTemplate.pdf，确认封面、章节和正文样式。",
+        "icon": "book"
+      },
+      {
+        "title": "编译自己的版本",
+        "description": "编辑同名 .tex 文件，按 cmd.md 的顺序运行 XeLaTeX、BibTeX，再运行两遍 XeLaTeX。",
+        "icon": "link"
+      }
+    ]
+  },
+  "features": {
+    "title": "项目特点",
+    "groups": [
+      {
+        "title": "中文与公式",
+        "description": "主文件启用 xeCJK、ctex 和 AMS 数学宏包，可直接替换示例内容。",
+        "detail": "",
+        "icon": "layers"
+      },
+      {
+        "title": "示例与文献",
+        "description": "对照成品 PDF 检查版面，再用 references.bib 管理自己的引用。",
+        "detail": "",
+        "icon": "book"
+      }
+    ]
+  },
+  "getting_started": {
+    "title": "开始使用 · {project}",
+    "steps": [
+      {
+        "title": "先看成品",
+        "description": "打开 ShaoxingNo1_BeamerTemplate.pdf，确认封面、章节和正文样式。",
+        "icon": "book"
+      },
+      {
+        "title": "编译自己的版本",
+        "description": "编辑同名 .tex 文件，按 cmd.md 的顺序运行 XeLaTeX、BibTeX，再运行两遍 XeLaTeX。",
+        "icon": "link"
+      }
+    ]
+  },
+  "community": {
+    "title": "参与 · {project}",
+    "description": "从这里找到使用说明、已有讨论和项目变更。",
+    "links": [
+      {
+        "label": "帮助与反馈",
+        "description": "查看已报告的问题，或描述复现步骤。",
+        "icon": "book"
+      },
+      {
+        "label": "仓库源代码",
+        "description": "查看原项目与维护入口。",
+        "icon": "link"
+      },
+      {
+        "label": "查看项目变更",
+        "description": "查看已有拉取请求或准备贡献。",
+        "icon": "code"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "{copyright}"
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{LANGUAGE}}" data-locale="{{LANGUAGE}}" data-theme="{{THEME}}" data-default-theme="{{THEME}}" data-site-root="{{SITE_ROOT}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Project website template">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="theme-color" content="{{THEME_COLOR_LIGHT}}" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="{{THEME_COLOR_DARK}}" media="(prefers-color-scheme: dark)">
+  <title>{{META_TITLE}}</title>
+  {{ALTERNATES}}
+  <link rel="icon" href="{{SITE_ROOT}}favicon.svg" type="image/svg+xml">
+  <script src="{{SITE_ROOT}}theme-init.js"></script>
+  <link rel="stylesheet" href="{{SITE_ROOT}}style.css">
+  <script src="{{SITE_ROOT}}script.js" defer></script>
+</head>
+<body class="page-{{PAGE}}" id="top">
+  <a class="skip-link" href="#main">{{SKIP_LINK}}</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./index.html">{{NAME}}</a>
+    <nav class="main-nav" id="main-nav" aria-label="{{NAV_LABEL}}">{{NAVIGATION}}</nav>
+    <div class="header-tools">
+      <details class="language-picker picker">
+        <summary aria-label="{{LANGUAGE_LABEL}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 5h12M9 2v3m4 0c-1 6-5 10-10 12m2-9c2 4 5 7 9 9m0 4 4-11 4 11m-6-4h4"/></svg><span class="language-current">{{LANGUAGE_NAME}}</span></summary>
+        <nav class="picker-menu" aria-label="{{LANGUAGE_LABEL}}">{{LANGUAGE_LINKS}}</nav>
+      </details>
+      <details class="theme-picker picker" hidden>
+        <summary aria-label="{{THEME_LABEL}}"><svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg><svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg><span class="theme-current">{{THEME_NAME}}</span></summary>
+        <div class="picker-menu">{{THEME_CHOICES}}</div>
+      </details>
+      <a class="repository-link" href="{{REPOSITORY_URL}}">{{GITHUB}} <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="{{OPEN_NAV}}" data-open-label="{{OPEN_NAV}}" data-close-label="{{CLOSE_NAV}}" aria-expanded="false" aria-controls="main-nav" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </header>
+  <main id="main" class="wrap">{{CONTENT}}</main>
+  <footer class="site-footer wrap"><p>{{COPYRIGHT}} <span aria-hidden="true">·</span> <a href="{{LICENSE_URL}}">{{LICENSE_LABEL}}</a></p></footer>
+</body>
+</html>
